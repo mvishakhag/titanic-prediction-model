@@ -4,7 +4,7 @@ import joblib
 st.markdown(
     """
     <style>
-    /* Page background */
+    /* Main app background */
     body {
         background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/HD-Underwater-Backgrounds-For-Desktop.jpg");
         background-size: cover;
@@ -16,57 +16,33 @@ st.markdown(
         background-color: rgba(0, 0, 0, 0);
     }
 
-    h1, h2, h3, h4, h5, h6, p, div, label {
+    /* Make all text white */
+    h1, h2, h3, h4, h5, h6, p, div, label, span {
         color: white !important;
     }
 
-    /* Sidebar */
-    [data-testid="stSidebar"] {
-        background-color: rgba(0, 0, 0, 0.6);
-        color: white;
+    /* Style sidebar background */
+    section[data-testid="stSidebar"] {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        border-radius: 10px;
+        padding: 15px;
     }
 
-    /* Input elements */
-    .stSelectbox > div, .stSlider > div, .stNumberInput > div, .stTextInput > div {
+    /* Optional: Style the widgets inside */
+    .stSelectbox, .stSlider, .stTextInput {
         background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        color: white !important;
-    }
-
-    /* Predict button */
-    .stButton>button {
-        font-size: 20px;
-        padding: 0.75em 2em;
-        border-radius: 10px;
-        background-color: #0c4a6e;
         color: white;
-        border: none;
     }
 
-    .stButton>button:hover {
-        background-color: #1e88e5;
-        transition: 0.3s ease;
-    }
-
-    /* Metric text styling */
-    .stMetric label, .stMetric div {
+    /* Slider text color fix */
+    .stSlider > div > div > div > div {
         color: white !important;
     }
-
-    /* Optional: Scrollbar (clean look) */
-    ::-webkit-scrollbar {
-        width: 6px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 10px;
-    }
-
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # Load model
 model = joblib.load("titanic_model.pkl")
