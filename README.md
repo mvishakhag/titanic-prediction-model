@@ -2,7 +2,7 @@
 
 This project is a **creative and interactive web app** built using **Streamlit**, designed to predict whether a passenger would survive the Titanic disaster — based on historical data.
 
-📍 **Live App**: [Try it here](https://titanic-prediction-model-fhvmadmny52hqzbskdz5rb.streamlit.app/)
+📍 **Live App**: [Try it here](https://titanic-prediction-model-8waz5bhkgalsqfq5vpyvrv.streamlit.app/)
 
 ---
 
