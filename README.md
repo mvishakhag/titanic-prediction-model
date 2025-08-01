@@ -9,7 +9,7 @@ This project is a **creative and interactive web app** built using **Streamlit**
 ## 🧠 About the Model
 
 - The model is trained on the Titanic dataset with **logistic regression** from scratch.
-- Accuracy: **~87%**
+- Accuracy: **~80%**
 - Input features include:
   - Passenger Class
   - Fare Paid
